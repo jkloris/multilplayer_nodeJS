@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Home page</h1>
+    </header>
+
+    <canvas height="200" width="500" id="canvas"></canvas>
+
+    <div>
+        <form id="img_btn">
+            <!-- <input type="text"> -->
+            <div id="flex">
+
+                <p>REFRESH</p>
+                <input type="image" src="./imgs/icon.png" alt="submit" height="50px" id="icon_btn">
+            </div>
+        </form>
+    </div>
+    
+    <div>
+        <form id="textInput" >
+            <input type="text" id="msg">
+            <input type="color" id="colorPicker">
+            <button>submit</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js">    </script>
+    <script src="./js/main.js">    </script>
+    <script src="./js/canvas.js">    </script>
+
+</body>
+</html>
